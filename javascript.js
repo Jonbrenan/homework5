@@ -2,6 +2,12 @@
 
 let contain = document.querySelector('.container')
 
+
+
+let m = moment();
+let time = $('<p>')
+
+
 // creating attributes
 
 let nineAmDiv1 = $('<div>')
@@ -61,6 +67,7 @@ let fivePmDiv2 = $('<div>')
 let fivePmspan = $('<span>')
 let fivePmTextArea = $('<textarea>')
 let fivePmButton = $('<button>')
+
 
 
 
@@ -189,6 +196,23 @@ fivePmButton.attr('class', 'btn btn-outline-secondary')
 fivePmButton.attr('type', 'button')
 fivePmButton.attr('id', 'button-addon2')
 fivePmButton.text('Save')
+time.text(m)
+
+
+
+
+let a = moment("3:00PM", " h:mmA");
+
+function check (now,time) {
+    if(now>time){
+        threePmTextArea.addClass('past')
+    }else {
+        threePmTextArea.addClass('future')
+    }
+}
+
+check(m,a)
+
 
 //appends
 
@@ -289,3 +313,5 @@ $('#fivePmDiv2').append(fivePmspan)
 $('#fivePmDiv1').append(fivePmTextArea)
 
 $('#fivePmDiv1').append(fivePmButton)
+
+$('#currentDay').append(time)
