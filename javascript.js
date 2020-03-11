@@ -201,17 +201,59 @@ time.text(m)
 
 
 
-let a = moment("3:00PM", " h:mmA");
 
-function check (now,time) {
+
+//// 9am ////
+
+let ten = moment("10:00AM", " h:mmA");
+
+
+let nineAM = moment("9:00AM", " h:mmA");
+
+
+function check1 (now,time,current) {
     if(now>time){
-        threePmTextArea.addClass('past')
-    }else {
-        threePmTextArea.addClass('future')
+        nineAmTextArea.addClass('past')
+    }else if (now<time) {
+        nineAmTextArea.addClass('future')
+    }if (now<current) {
+        nineAmTextArea.addClass('present')
     }
+        
+    
 }
 
-check(m,a)
+check1(m,nineAM,ten)
+
+
+
+
+
+//// 4pm ////
+
+let b = moment("5:00PM", " h:mmA");
+
+
+let fourPM = moment("4:00PM", " h:mmA");
+
+
+function check4 (now,time,current) {
+    if(now>time){
+        fourPmTextArea.addClass('past')
+    }else if (now<time) {
+        fourPmTextArea.addClass('future')
+    }if (now<current) {
+        fourPmTextArea.addClass('present')
+    }
+        
+    
+}
+
+check4(m,fourPM,b)
+
+
+
+
 
 
 //appends
