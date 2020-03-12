@@ -15,30 +15,35 @@ let nineAmDiv2 = $('<div>')
 let nineAMspan = $('<span>')
 let nineAmTextArea = $('<textarea>')
 let nineAmButton = $('<button>')
+let nineAmText = localStorage.getItem('save1Content')
 
 let tenAmDiv1 = $('<div>')
 let tenAmDiv2 = $('<div>')
 let tenAMspan = $('<span>')
 let tenAmTextArea = $('<textarea>')
 let tenAmButton = $('<button>')
+let tenAmText= localStorage.getItem('save2Content')
 
 let elevenAmDiv1 = $('<div>')
 let elevenAmDiv2 = $('<div>')
 let elevenAMspan = $('<span>')
 let elevenAmTextArea = $('<textarea>')
 let elevenAmButton = $('<button>')
+let elevenAmText= localStorage.getItem('save3Content')
 
 let twelvePmDiv1 = $('<div>')
 let twelvePmDiv2 = $('<div>')
 let twelvePmspan = $('<span>')
 let twelvePmTextArea = $('<textarea>')
 let twelvePmButton = $('<button>')
+let twelvePmText= localStorage.getItem('save4Content')
 
 let onePmDiv1 = $('<div>')
 let onePmDiv2 = $('<div>')
 let onePmspan = $('<span>')
 let onePmTextArea = $('<textarea>')
 let onePmButton = $('<button>')
+let onePmText= localStorage.getItem('save5Content')
 
 
 let twoPmDiv1 = $('<div>')
@@ -46,6 +51,7 @@ let twoPmDiv2 = $('<div>')
 let twoPmspan = $('<span>')
 let twoPmTextArea = $('<textarea>')
 let twoPmButton = $('<button>')
+let twoPmText= localStorage.getItem('save6Content')
 
 
 let threePmDiv1 = $('<div>')
@@ -53,6 +59,7 @@ let threePmDiv2 = $('<div>')
 let threePmspan = $('<span>')
 let threePmTextArea = $('<textarea>')
 let threePmButton = $('<button>')
+let threePmText= localStorage.getItem('save7Content')
 
 
 let fourPmDiv1 = $('<div>')
@@ -60,6 +67,7 @@ let fourPmDiv2 = $('<div>')
 let fourPmspan = $('<span>')
 let fourPmTextArea = $('<textarea>')
 let fourPmButton = $('<button>')
+let fourPmText= localStorage.getItem('save8Content')
 
 
 let fivePmDiv1 = $('<div>')
@@ -67,6 +75,7 @@ let fivePmDiv2 = $('<div>')
 let fivePmspan = $('<span>')
 let fivePmTextArea = $('<textarea>')
 let fivePmButton = $('<button>')
+let fivePmText = localStorage.getItem('save9Content')
 
 
 
@@ -84,9 +93,12 @@ nineAMspan.attr('class', 'input-group-text')
 nineAMspan.text('9am')
 nineAmTextArea.attr('class', 'form-control')
 nineAmTextArea.attr('aria-label', 'With textarea')
+nineAmTextArea.attr('id', 'textSave1')
+nineAmTextArea.attr('placeholder', nineAmText)
 nineAmButton.attr('class', 'btn btn-outline-secondary')
 nineAmButton.attr('type', 'button')
 nineAmButton.attr('id', 'button-addon2')
+nineAmButton.attr('id', 'save1')
 nineAmButton.text('Save')
 
 tenAmDiv1.attr('class', 'input-group')
@@ -97,6 +109,8 @@ tenAMspan.attr('class', 'input-group-text')
 tenAMspan.text('10am')
 tenAmTextArea.attr('class', 'form-control')
 tenAmTextArea.attr('aria-label', 'With textarea')
+tenAmTextArea.attr('id', 'textSave2')
+tenAmTextArea.attr('placeholder', tenAmText)
 tenAmButton.attr('class', 'btn btn-outline-secondary')
 tenAmButton.attr('type', 'button')
 tenAmButton.attr('id', 'button-addon2')
@@ -110,6 +124,8 @@ elevenAMspan.attr('class', 'input-group-text')
 elevenAMspan.text('11am')
 elevenAmTextArea.attr('class', 'form-control')
 elevenAmTextArea.attr('aria-label', 'With textarea')
+elevenAmTextArea.attr('id', 'textSave3')
+elevenAmTextArea.attr('placeholder', elevenAmText)
 elevenAmButton.attr('class', 'btn btn-outline-secondary')
 elevenAmButton.attr('type', 'button')
 elevenAmButton.attr('id', 'button-addon2')
@@ -123,6 +139,8 @@ twelvePmspan.attr('class', 'input-group-text')
 twelvePmspan.text('12pm')
 twelvePmTextArea.attr('class', 'form-control')
 twelvePmTextArea.attr('aria-label', 'With textarea')
+twelvePmTextArea.attr('id', 'textSave4')
+twelvePmTextArea.attr('placeholder', twelvePmText)
 twelvePmButton.attr('class', 'btn btn-outline-secondary')
 twelvePmButton.attr('type', 'button')
 twelvePmButton.attr('id', 'button-addon2')
@@ -137,6 +155,8 @@ onePmspan.attr('class', 'input-group-text')
 onePmspan.text('1pm')
 onePmTextArea.attr('class', 'form-control')
 onePmTextArea.attr('aria-label', 'With textarea')
+onePmTextArea.attr('placeholder', onePmText)
+onePmTextArea.attr('id', 'textSave5')
 onePmButton.attr('class', 'btn btn-outline-secondary')
 onePmButton.attr('type', 'button')
 onePmButton.attr('id', 'button-addon2')
@@ -150,6 +170,8 @@ twoPmspan.attr('class', 'input-group-text')
 twoPmspan.text('2pm')
 twoPmTextArea.attr('class', 'form-control')
 twoPmTextArea.attr('aria-label', 'With textarea')
+twoPmTextArea.attr('id', 'textSave6')
+twoPmTextArea.attr('placeholder', twoPmText)
 twoPmButton.attr('class', 'btn btn-outline-secondary')
 twoPmButton.attr('type', 'button')
 twoPmButton.attr('id', 'button-addon2')
@@ -164,6 +186,8 @@ threePmspan.attr('class', 'input-group-text')
 threePmspan.text('3pm')
 threePmTextArea.attr('class', 'form-control')
 threePmTextArea.attr('aria-label', 'With textarea')
+threePmTextArea.attr('id', 'textSave7')
+threePmTextArea.attr('placeholder', threePmText)
 threePmButton.attr('class', 'btn btn-outline-secondary')
 threePmButton.attr('type', 'button')
 threePmButton.attr('id', 'button-addon2')
@@ -178,6 +202,8 @@ fourPmspan.attr('class', 'input-group-text')
 fourPmspan.text('4pm')
 fourPmTextArea.attr('class', 'form-control')
 fourPmTextArea.attr('aria-label', 'With textarea')
+fourPmTextArea.attr('id', 'textSave8')
+fourPmTextArea.attr('placeholder', fourPmText)
 fourPmButton.attr('class', 'btn btn-outline-secondary')
 fourPmButton.attr('type', 'button')
 fourPmButton.attr('id', 'button-addon2')
@@ -192,6 +218,8 @@ fivePmspan.attr('class', 'input-group-text')
 fivePmspan.text('5pm')
 fivePmTextArea.attr('class', 'form-control')
 fivePmTextArea.attr('aria-label', 'With textarea')
+fivePmTextArea.attr('id', 'textSave9')
+fivePmTextArea.attr('placeholder', fivePmText)
 fivePmButton.attr('class', 'btn btn-outline-secondary')
 fivePmButton.attr('type', 'button')
 fivePmButton.attr('id', 'button-addon2')
@@ -225,6 +253,13 @@ function check1 (now,time,current) {
 
 check1(m,nineAM,ten)
 
+$(nineAmButton).on('click', function() {
+    let textCont1= document.getElementById('textSave1').value
+    localStorage.setItem('save1Content', textCont1)
+    
+
+})
+
 
 
 
@@ -252,6 +287,14 @@ function check2 (now,time,current) {
 check2(m,tenAM,eleven)
 
 
+$(tenAmButton).on('click', function() {
+    let textCont2= document.getElementById('textSave2').value
+    localStorage.setItem('save2Content', textCont2)
+    
+
+})
+
+
 
 
 
@@ -277,6 +320,14 @@ function check3 (now,time,current) {
 }
 
 check3(m,elevenAM,twelve)
+
+$(elevenAmButton).on('click', function() {
+    let textCont3= document.getElementById('textSave3').value
+    localStorage.setItem('save3Content', textCont3)
+    
+
+})
+
 
 
 
@@ -306,6 +357,13 @@ function check4 (now,time,current) {
 }
 
 check4(m,twelvePM,one)
+
+$(twelvePmButton).on('click', function() {
+    let textCont4= document.getElementById('textSave4').value
+    localStorage.setItem('save4Content', textCont4)
+    
+
+})
 
 
 
@@ -337,6 +395,12 @@ function check5 (now,time,current) {
 check5(m,onePM,two)
 
 
+$(onePmButton).on('click', function() {
+    let textCont5= document.getElementById('textSave5').value
+    localStorage.setItem('save5Content', textCont5)
+    
+
+})
 
 
 //// 2pm ////
@@ -364,7 +428,12 @@ function check6 (now,time,current) {
 check6(m,twoPM,three)
 
 
+$(twoPmButton).on('click', function() {
+    let textCont6= document.getElementById('textSave6').value
+    localStorage.setItem('save6Content', textCont6)
+    
 
+})
 
 
 
@@ -387,6 +456,15 @@ function check7 (now,time,current) {
 }
 
 check7(m,threePM,four)
+
+
+$(threePmButton).on('click', function() {
+    let textCont7= document.getElementById('textSave7').value
+    localStorage.setItem('save7Content', textCont7)
+    
+
+})
+
 
 
 
@@ -414,6 +492,13 @@ function check8 (now,time,current) {
 
 check8(m,fourPM,five)
 
+$(fourPmButton).on('click', function() {
+    let textCont8= document.getElementById('textSave8').value
+    localStorage.setItem('save8Content', textCont8)
+    
+
+})
+
 
 
 
@@ -440,6 +525,12 @@ function check9 (now,time,current) {
 
 check9(m,fivePM,six)
 
+$(fivePmButton).on('click', function() {
+    let textCont9= document.getElementById('textSave9').value
+    localStorage.setItem('save9Content', textCont9)
+    
+
+})
 
 
 
