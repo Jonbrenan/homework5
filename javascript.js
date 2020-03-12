@@ -229,15 +229,178 @@ check1(m,nineAM,ten)
 
 
 
+//// 10am ////
+
+let eleven = moment("11:00AM", " h:mmA");
+
+
+let tenAM = moment("10:00AM", " h:mmA");
+
+
+function check2 (now,time,current) {
+    if(now>time){
+        tenAmTextArea.addClass('past')
+    }else if (now<time) {
+        tenAmTextArea.addClass('future')
+    }if (now<current) {
+        tenAmTextArea.addClass('present')
+    }
+        
+    
+}
+
+check2(m,tenAM,eleven)
+
+
+
+
+
+
+//// 11am ////
+
+let twelve = moment("12:00PM", " h:mmA");
+
+
+let elevenAM = moment("11:00AM", " h:mmA");
+
+
+function check3 (now,time,current) {
+    if(now>time){
+        elevenAmTextArea.addClass('past')
+    }else if (now<time) {
+        elevenAmTextArea.addClass('future')
+    }if (now<current) {
+        elevenAmTextArea.addClass('present')
+    }
+        
+    
+}
+
+check3(m,elevenAM,twelve)
+
+
+
+
+
+
+//// 12pm ////
+
+
+
+let one = moment("1:00PM", " h:mmA");
+
+
+let twelvePM = moment("12:00PM", " h:mmA");
+
+
+function check4 (now,time,current) {
+    if(now>time){
+        twelvePmTextArea.addClass('past')
+    }else if (now<time) {
+        twelvePmTextArea.addClass('future')
+    }if (now<current) {
+        twelvePmTextArea.addClass('present')
+    }
+        
+    
+}
+
+check4(m,twelvePM,one)
+
+
+
+
+
+
+//// 1pm ////
+
+
+
+let two = moment("2:00PM", " h:mmA");
+
+
+let onePM = moment("1:00PM", " h:mmA");
+
+
+function check5 (now,time,current) {
+    if(now>time){
+        onePmTextArea.addClass('past')
+    }else if (now<time) {
+        onePmTextArea.addClass('future')
+    }if (now<current) {
+        onePmTextArea.addClass('present')
+    }
+        
+    
+}
+
+check5(m,onePM,two)
+
+
+
+
+//// 2pm ////
+
+
+
+let three = moment("3:00PM", " h:mmA");
+
+
+let twoPM = moment("2:00PM", " h:mmA");
+
+
+function check6 (now,time,current) {
+    if(now>time){
+        twoPmTextArea.addClass('past')
+    }else if (now<time) {
+        twoPmTextArea.addClass('future')
+    }if (now<current) {
+        twoPmTextArea.addClass('present')
+    }
+        
+    
+}
+
+check6(m,twoPM,three)
+
+
+
+
+
+
+let four = moment("4:00PM", " h:mmA");
+
+
+let threePM = moment("3:00PM", " h:mmA");
+
+
+function check7 (now,time,current) {
+    if(now>time){
+        threePmTextArea.addClass('past')
+    }else if (now<time) {
+        threePmTextArea.addClass('future')
+    }if (now<current) {
+        threePmTextArea.addClass('present')
+    }
+        
+    
+}
+
+check7(m,threePM,four)
+
+
+
+
+
 //// 4pm ////
 
-let b = moment("5:00PM", " h:mmA");
+let five = moment("5:00PM", " h:mmA");
 
 
 let fourPM = moment("4:00PM", " h:mmA");
 
 
-function check4 (now,time,current) {
+function check8 (now,time,current) {
     if(now>time){
         fourPmTextArea.addClass('past')
     }else if (now<time) {
@@ -249,7 +412,36 @@ function check4 (now,time,current) {
     
 }
 
-check4(m,fourPM,b)
+check8(m,fourPM,five)
+
+
+
+
+
+//// 5pm ////
+
+let six = moment("6:00PM", " h:mmA");
+
+
+let fivePM = moment("5:00PM", " h:mmA");
+
+
+function check9 (now,time,current) {
+    if(now>time){
+        fivePmTextArea.addClass('past')
+    }else if (now<time) {
+        fivePmTextArea.addClass('future')
+    }if (now<current) {
+        fivePmTextArea.addClass('present')
+    }
+        
+    
+}
+
+check9(m,fivePM,six)
+
+
+
 
 
 
