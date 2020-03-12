@@ -2,13 +2,14 @@
 
 let contain = document.querySelector('.container')
 
-
+/* the m represents what the current time is, and the "let time" is displaying the current time
+on the front page */
 
 let m = moment();
 let time = $('<p>')
 
 
-// creating attributes
+// creating elements for the text blocks and everything inside them
 
 let nineAmDiv1 = $('<div>')
 let nineAmDiv2 = $('<div>')
@@ -82,7 +83,7 @@ let fivePmText = localStorage.getItem('save9Content')
 
 
 
-//attributes
+//attributes for all most elements
 
 
 nineAmDiv1.attr('class', 'input-group')
@@ -233,6 +234,10 @@ time.text(m)
 
 //// 9am ////
 
+
+
+//each section of code here is controlling how the textblocks appear depending on what time it is
+
 let ten = moment("10:00AM", " h:mmA");
 
 
@@ -253,6 +258,8 @@ function check1 (now,time,current) {
 
 check1(m,nineAM,ten)
 
+
+// code here allows what is typed into text blocks to be saved in the local storage
 $(nineAmButton).on('click', function() {
     let textCont1= document.getElementById('textSave1').value
     localStorage.setItem('save1Content', textCont1)
@@ -539,7 +546,7 @@ $(fivePmButton).on('click', function() {
 
 
 
-//appends
+//These are all the appends, or the code that actually creates everything that is seen on screen
 
 $('.container').append(nineAmDiv1)
 
