@@ -37,9 +37,9 @@ Installation
 to install the application, one would go to the github link provoided in this README, download the link and run.
 link: https://github.com/Jonbrenan/homework5
 
-![This is what the user will see when they open the website!](pictures\gitpage.jpg)
+![This is what the user will see when they open the website!](pictures/gitpage.jpg)
 
-![Picture of applicatipon!](pictures\application.png)
+![Picture of applicatipon!](pictures/application.png)
 
 
 License
