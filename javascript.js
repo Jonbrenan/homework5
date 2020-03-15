@@ -8,7 +8,7 @@ on the front page */
 let m = moment();
 let time = $('<p>')
 
-
+document.getElementById('body')
 // creating elements for the text blocks and everything inside them
 
 let nineAmDiv1 = $('<div>')
@@ -95,12 +95,14 @@ nineAMspan.text('9am')
 nineAmTextArea.attr('class', 'form-control')
 nineAmTextArea.attr('aria-label', 'With textarea')
 nineAmTextArea.attr('id', 'textSave1')
-nineAmTextArea.attr('placeholder', nineAmText)
 nineAmButton.attr('class', 'btn btn-outline-secondary')
 nineAmButton.attr('type', 'button')
 nineAmButton.attr('id', 'button-addon2')
 nineAmButton.attr('id', 'save1')
 nineAmButton.text('Save')
+
+
+
 
 tenAmDiv1.attr('class', 'input-group')
 tenAmDiv1.attr("id", 'tenAmDiv1')
@@ -111,7 +113,6 @@ tenAMspan.text('10am')
 tenAmTextArea.attr('class', 'form-control')
 tenAmTextArea.attr('aria-label', 'With textarea')
 tenAmTextArea.attr('id', 'textSave2')
-tenAmTextArea.attr('placeholder', tenAmText)
 tenAmButton.attr('class', 'btn btn-outline-secondary')
 tenAmButton.attr('type', 'button')
 tenAmButton.attr('id', 'button-addon2')
@@ -126,7 +127,6 @@ elevenAMspan.text('11am')
 elevenAmTextArea.attr('class', 'form-control')
 elevenAmTextArea.attr('aria-label', 'With textarea')
 elevenAmTextArea.attr('id', 'textSave3')
-elevenAmTextArea.attr('placeholder', elevenAmText)
 elevenAmButton.attr('class', 'btn btn-outline-secondary')
 elevenAmButton.attr('type', 'button')
 elevenAmButton.attr('id', 'button-addon2')
@@ -141,7 +141,6 @@ twelvePmspan.text('12pm')
 twelvePmTextArea.attr('class', 'form-control')
 twelvePmTextArea.attr('aria-label', 'With textarea')
 twelvePmTextArea.attr('id', 'textSave4')
-twelvePmTextArea.attr('placeholder', twelvePmText)
 twelvePmButton.attr('class', 'btn btn-outline-secondary')
 twelvePmButton.attr('type', 'button')
 twelvePmButton.attr('id', 'button-addon2')
@@ -156,7 +155,6 @@ onePmspan.attr('class', 'input-group-text')
 onePmspan.text('1pm')
 onePmTextArea.attr('class', 'form-control')
 onePmTextArea.attr('aria-label', 'With textarea')
-onePmTextArea.attr('placeholder', onePmText)
 onePmTextArea.attr('id', 'textSave5')
 onePmButton.attr('class', 'btn btn-outline-secondary')
 onePmButton.attr('type', 'button')
@@ -172,7 +170,6 @@ twoPmspan.text('2pm')
 twoPmTextArea.attr('class', 'form-control')
 twoPmTextArea.attr('aria-label', 'With textarea')
 twoPmTextArea.attr('id', 'textSave6')
-twoPmTextArea.attr('placeholder', twoPmText)
 twoPmButton.attr('class', 'btn btn-outline-secondary')
 twoPmButton.attr('type', 'button')
 twoPmButton.attr('id', 'button-addon2')
@@ -188,7 +185,6 @@ threePmspan.text('3pm')
 threePmTextArea.attr('class', 'form-control')
 threePmTextArea.attr('aria-label', 'With textarea')
 threePmTextArea.attr('id', 'textSave7')
-threePmTextArea.attr('placeholder', threePmText)
 threePmButton.attr('class', 'btn btn-outline-secondary')
 threePmButton.attr('type', 'button')
 threePmButton.attr('id', 'button-addon2')
@@ -204,7 +200,6 @@ fourPmspan.text('4pm')
 fourPmTextArea.attr('class', 'form-control')
 fourPmTextArea.attr('aria-label', 'With textarea')
 fourPmTextArea.attr('id', 'textSave8')
-fourPmTextArea.attr('placeholder', fourPmText)
 fourPmButton.attr('class', 'btn btn-outline-secondary')
 fourPmButton.attr('type', 'button')
 fourPmButton.attr('id', 'button-addon2')
@@ -220,7 +215,6 @@ fivePmspan.text('5pm')
 fivePmTextArea.attr('class', 'form-control')
 fivePmTextArea.attr('aria-label', 'With textarea')
 fivePmTextArea.attr('id', 'textSave9')
-fivePmTextArea.attr('placeholder', fivePmText)
 fivePmButton.attr('class', 'btn btn-outline-secondary')
 fivePmButton.attr('type', 'button')
 fivePmButton.attr('id', 'button-addon2')
@@ -267,6 +261,8 @@ $(nineAmButton).on('click', function() {
 
 })
 
+$(nineAmTextArea).val(nineAmText);
+
 
 
 
@@ -302,7 +298,7 @@ $(tenAmButton).on('click', function() {
 })
 
 
-
+$(tenAmTextArea).val(tenAmText);
 
 
 
@@ -337,7 +333,7 @@ $(elevenAmButton).on('click', function() {
 
 
 
-
+$(elevenAmTextArea).val(elevenAmText);
 
 
 
@@ -372,7 +368,7 @@ $(twelvePmButton).on('click', function() {
 
 })
 
-
+$(twelvePmTextArea).val(twelvePmText);
 
 
 
@@ -410,6 +406,9 @@ $(onePmButton).on('click', function() {
 })
 
 
+$(onePmTextArea).val(onePmText);
+
+
 //// 2pm ////
 
 
@@ -442,6 +441,10 @@ $(twoPmButton).on('click', function() {
 
 })
 
+$(twoPmTextArea).val(twoPmText);
+
+
+// three PM
 
 
 let four = moment("4:00PM", " h:mmA");
@@ -473,6 +476,8 @@ $(threePmButton).on('click', function() {
 })
 
 
+
+$(threePmTextArea).val(threePmText);
 
 
 
@@ -506,7 +511,7 @@ $(fourPmButton).on('click', function() {
 
 })
 
-
+$(fourPmTextArea).val(fourPmText);
 
 
 
@@ -538,6 +543,8 @@ $(fivePmButton).on('click', function() {
     
 
 })
+
+$(fivePmTextArea).val(fivePmText);
 
 
 
